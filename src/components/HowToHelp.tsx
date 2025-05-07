@@ -1,4 +1,4 @@
-import { CreditCard, ShoppingBag, Truck, HelpingHand } from 'lucide-react';
+import { CreditCard, ShoppingBag, Truck } from 'lucide-react';
 
 const HowToHelp = () => {
   return (
@@ -13,7 +13,7 @@ const HowToHelp = () => {
         </div>
       </div>
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         <div className="card fade-in-section flex flex-col">
           <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
             <CreditCard className="h-8 w-8 text-orange-600" />
@@ -55,21 +55,6 @@ const HowToHelp = () => {
           <div className="text-center mt-4">
             <a href="#contact" className="btn-primary">
               Связаться с нами
-            </a>
-          </div>
-        </div>
-        
-        <div className="card fade-in-section flex flex-col">
-          <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mb-4 mx-auto">
-            <HelpingHand className="h-8 w-8 text-orange-600" />
-          </div>
-          <h3 className="text-xl font-bold text-center mb-3">Волонтерство</h3>
-          <p className="text-gray-600 text-center mb-4 flex-grow">
-            Станьте частью нашей команды волонтеров и помогайте детям своими навыками и временем.
-          </p>
-          <div className="text-center mt-4">
-            <a href="#contact" className="btn-primary">
-              Стать волонтером
             </a>
           </div>
         </div>
@@ -254,6 +239,22 @@ const HowToHelp = () => {
           </div>
         </div>
       </div>
+
+      <div id="photos" className="mt-16 bg-blue-50 p-8">
+        <h3 className="text-2xl font-bold mb-8 text-center">Фотографии</h3>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {[1, 2, 3, 4, 5, 6].map((i) => (
+            <div key={i} className="aspect-square bg-gray-200 overflow-hidden">
+              <img
+                src={`/images/photo${i}.jpg`}
+                alt={`Фото ${i}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
     </section>
   );
 };
