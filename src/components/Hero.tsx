@@ -12,7 +12,6 @@ const Hero = () => {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8">
-          {/* Текстовая часть */}
           <div className="md:w-1/2 lg:w-3/5">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
               Благотворительная акция "Сердцем к сердцу"
@@ -37,10 +36,9 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Изображение справа */}
           <div className="md:w-1/2 lg:w-2/5 flex justify-center">
             <img
-              src="/public/main.jpg"
+              src="/main.jpg"
               alt="Дети в детском доме"
               className="rounded-lg shadow-xl max-h-96 object-cover"
             />
