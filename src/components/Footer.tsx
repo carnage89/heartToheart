@@ -29,7 +29,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Send className="h-5 w-5 text-green-400 mr-2 flex-shrink-0 mt-0.5" />
-                <span>@tggruppa</span>
+                <span>@qwazesv</span>
               </li>
             </ul>
           </div>
